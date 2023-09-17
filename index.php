@@ -63,7 +63,7 @@ function getSymbol () { return "!#$%&()=~|<>,./+*:[]{}^-;"; } // 含めていな
 
 // パラメータをセット
 // ・文字列型の数値は数値へキャストする
-$action = isset($_POST['action'])? (int)$_POST['action']:null;
+$action = isset($_POST['action'])? $_POST['action']:null;
 $num = isset($_POST['num'])? (int)$_POST['num']:NUM;
 $length = isset($_POST['length'])? (int)$_POST['length']:LENGTH;
 $symbol = isset($_POST['symbolCheck'])?? SYMBOL;
